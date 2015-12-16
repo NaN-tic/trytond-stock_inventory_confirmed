@@ -1,0 +1,24 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_inventory_form_domain_confimred"
+msgid "Confirmed"
+msgstr "Confirmado"
+
+msgctxt "selection:stock.inventory,state:"
+msgid "Confirmed"
+msgstr "Confirmado"
+
+msgctxt "view:stock.inventory:"
+msgid "Confirm"
+msgstr "Confirmar"
+
+msgctxt "view:stock.inventory:"
+msgid "Do"
+msgstr "Realitzar"
+
+msgctxt "view:stock.inventory:"
+msgid "Draft"
+msgstr "Borrador"
