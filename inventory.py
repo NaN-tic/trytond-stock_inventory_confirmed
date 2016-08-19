@@ -21,7 +21,7 @@ class Inventory:
                 ('draft', 'confirmed'),
                 ('confirmed', 'done'),
                 ('confirmed', 'draft'),
-                ('confimred', 'cancel'),
+                ('confirmed', 'cancel'),
                 ))
         cls._buttons.update({
                 'draft': {
