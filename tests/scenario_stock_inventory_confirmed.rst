@@ -12,25 +12,18 @@ Imports::
     >>> from dateutil.relativedelta import relativedelta
     >>> from decimal import Decimal
     >>> from proteus import config, Model, Wizard
+    >>> from trytond.tests.tools import activate_modules
     >>> from trytond.modules.company.tests.tools import create_company, \
     ...     get_company
     >>> from trytond.modules.account.tests.tools import create_fiscalyear, \
-    ...     create_chart, get_accounts, create_tax, set_tax_code
+    ...     create_chart, get_accounts, create_tax
     >>> from trytond.modules.account_invoice.tests.tools import \
     ...     set_fiscalyear_invoice_sequences, create_payment_term
     >>> today = datetime.date.today()
 
-Create database::
+Activate stock_inventory_confirmed::
 
-    >>> config = config.set_trytond()
-    >>> config.pool.test = True
-
-Install stock_inventory_confirmed Module::
-
-    >>> Module = Model.get('ir.module')
-    >>> stock_module, = Module.find([('name', '=', 'stock_inventory_confirmed')])
-    >>> stock_module.click('install')
-    >>> Wizard('ir.module.install_upgrade').execute('upgrade')
+    >>> config = activate_modules('stock_inventory_confirmed')
 
 Create company::
 
@@ -98,4 +91,3 @@ A confirmed inventory can be reset to draft::
     >>> inventory.click('draft')
     >>> inventory.state
     u'draft'
-
