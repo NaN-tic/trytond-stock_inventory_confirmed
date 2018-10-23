@@ -5,10 +5,9 @@ from trytond.pyson import Eval
 from trytond.pool import PoolMeta
 
 __all__ = ['Inventory']
-__metaclass__ = PoolMeta
 
 
-class Inventory:
+class Inventory(metaclass=PoolMeta):
     __name__ = 'stock.inventory'
 
     @classmethod

@@ -48,7 +48,6 @@ Create products::
     >>> template.default_uom = unit
     >>> template.type = 'goods'
     >>> template.list_price = Decimal('300')
-    >>> template.cost_price = Decimal('80')
     >>> template.cost_price_method = 'average'
     >>> template.save()
     >>> product, = template.products
@@ -63,7 +62,7 @@ Create an inventory::
     >>> line.quantity = 3.0
     >>> inventory.click('first_confirm')
     >>> inventory.state
-    u'confirmed'
+    'confirmed'
 
 Moves are not created until the inventory is done::
 
@@ -73,7 +72,7 @@ Moves are not created until the inventory is done::
     0
     >>> inventory.click('confirm')
     >>> inventory.state
-    u'done'
+    'done'
     >>> move, = StockMove.find([('product', '=', product.id)])
     >>> move.quantity
     3.0
@@ -87,7 +86,7 @@ A confirmed inventory can be reset to draft::
     >>> line.quantity = 3.0
     >>> inventory.click('first_confirm')
     >>> inventory.state
-    u'confirmed'
+    'confirmed'
     >>> inventory.click('draft')
     >>> inventory.state
-    u'draft'
+    'draft'
