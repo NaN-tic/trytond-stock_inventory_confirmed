@@ -4,7 +4,7 @@
 <data>
     <xpath expr="/form/group[@id='group_buttons']/group[@id='buttons']"
             position="inside">
-        <button string="Confirm" name="first_confirm" icon="tryton-go-next"/>
+        <button string="Confirm" name="first_confirm" icon="tryton-forward"/>
         <button string="Draft" name="draft" icon="tryton-clear"/>
     </xpath>
     <xpath expr="/form/group[@id='group_buttons']/group[@id='buttons']/button[@name='confirm']"
