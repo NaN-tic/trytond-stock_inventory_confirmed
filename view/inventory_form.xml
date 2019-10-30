@@ -2,12 +2,12 @@
 <!-- The COPYRIGHT file at the top level of this repository contains the full
      copyright notices and license terms. -->
 <data>
-    <xpath expr="/form/group[@id='group_buttons']/group[@id='buttons']"
+    <xpath expr="/form/group[@id='buttons']"
             position="inside">
         <button string="Confirm" name="first_confirm" icon="tryton-forward"/>
         <button string="Draft" name="draft" icon="tryton-clear"/>
     </xpath>
-    <xpath expr="/form/group[@id='group_buttons']/group[@id='buttons']/button[@name='confirm']"
+    <xpath expr="/form/group[@id='buttons']/button[@name='confirm']"
             position="replace_attributes">
         <button string="Do" name="confirm" icon="tryton-ok"/>
     </xpath>
