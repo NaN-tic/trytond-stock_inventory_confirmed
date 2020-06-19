@@ -20,7 +20,7 @@ class Inventory(metaclass=PoolMeta):
                 ('draft', 'confirmed'),
                 ('confirmed', 'done'),
                 ('confirmed', 'draft'),
-                ('confirmed', 'cancel'),
+                ('confirmed', 'cancelled'),
                 ))
         cls._buttons.update({
                 'draft': {

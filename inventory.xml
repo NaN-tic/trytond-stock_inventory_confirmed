@@ -3,7 +3,7 @@
 this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
-
+        <!-- stock.inventory -->
         <record model="ir.ui.view" id="inventory_view_form">
             <field name="model">stock.inventory</field>
             <field name="name">inventory_form</field>
@@ -37,7 +37,5 @@ this repository contains the full copyright notices and license terms. -->
             <field name="button" ref="inventory_draft_button"/>
             <field name="group" ref="stock.group_stock"/>
         </record>
-
-
     </data>
 </tryton>
