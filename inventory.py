@@ -30,7 +30,7 @@ class Inventory(metaclass=PoolMeta):
                     'invisible': Eval('state') != 'confirmed',
                     },
                 'cancel': {
-                    'invisible': Eval('state').in_(['cancel', 'done']),
+                    'invisible': Eval('state').in_(['cancelled', 'done']),
                     },
                 'first_confirm': {
                     'invisible': Eval('state') != 'draft',
